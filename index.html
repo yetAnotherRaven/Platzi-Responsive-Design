@@ -5,6 +5,7 @@
     <meta charset="utf-8"/>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/invie.css"/>
+    <<meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body>
     <section id="portada" class="portada background"> <!-- portada -->
@@ -103,11 +104,14 @@
       </div>
     </footer>
     <script>
-      var $burgerButton= document.getElementById(burger-button);
-      var $menu= document.getElementById(menu);
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
 
-      $burgerButton.addEventListener('touchStart',function(){
-      $menu.classList.toggle('active')});
+      $burguerButton.addEventListener('touchstart', toggleMenu);
+
+      function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
     </script>
   </body>
 </html>
